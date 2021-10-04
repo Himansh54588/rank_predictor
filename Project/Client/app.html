@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JEE Rank predictor</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+<form class="form">
+	<h2>marks</h2>
+    <input class="marks"  type="text" id="uimarks" class="floatLabel" name="marks" value="1000">
+	
+	</form>
+<form class="form">
+	
+		<h2>category</h2>
+	<div>
+  <select class="category" name="" id="uicategory">
+    <option value="" disabled="disabled" selected="selected">Select a Category</option>
+		<option>General</option>
+        <option>EWS</option>
+		<option>OBC</option>
+        <option>SC</option>
+		<option>ST</option>
+  </select>
+</div>
+	<button class="submit" onclick="onClickedrank()" type="button">Rank</button>
+	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+</body>
+</html>
